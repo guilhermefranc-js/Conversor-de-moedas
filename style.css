@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;700&display=swap');
+
+/* ======== GERAL & RESET ======== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ======== LAYOUT DE FUNDO ======== */
+.split-background-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.left-half-color {
+    flex: 70%;
+    background-color: rgb(18, 61, 18);
+}
+
+.right-half-color {
+    flex: 30%;
+    background-color: rgb(216, 216, 216);
+}
+
+/* ======== CONTEÚDO PRINCIPAL ======== */
+main {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    color: rgb(156, 212, 100);
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(50px, 12vw, 70px); /* Fonte responsiva */
+    line-height: 1.1;
+    font-weight: 400; /* A fonte Anton já é "bold" por padrão */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+p {
+    font-size: 18px;
+    padding: 15px 0;
+    max-width: 400px;
+}
+
+/* ======== CAIXA DO CONVERSOR ======== */
+section {
+    margin-top: 30px;
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.converter-text {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* ESTA CLASSE AGORA CONTROLA AMBOS OS CAMPOS DE INPUT */
+.currency-input {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* ESTILO PARA TODOS OS INPUTS (number e text) DENTRO DE .currency-input */
+.currency-input input {
+    flex-grow: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.currency-input input::-webkit-outer-spin-button,
+.currency-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Remove setas do Chrome/Safari */
+    margin: 0;
+}
+
+/* ESTILO PARA AMBOS OS SELECTS DENTRO DE .currency-input */
+.currency-input select {
+    width: 80px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* ======== BOTÕES ======== */
+#botao-troca {
+    background-color: rgb(100, 190, 100);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#botao-troca:hover {
+    background-color: rgb(73, 138, 73);
+    transform: rotate(180deg);
+}
+
+#converter-btn {
+    background-color: rgb(73, 138, 73);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#converter-btn:hover {
+    background-color: #225335;
+    transform: scale(0.95);
+}

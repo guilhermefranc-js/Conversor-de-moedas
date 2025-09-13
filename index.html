@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+</head>
+<body>
+    <div class="split-background-container">  
+    <div class="left-half-color"></div>
+        <div class="right-half-color"></div></div> 
+         
+        <main>
+            <header><h1>CONVERSOR DE MOEDAS</h1><p>Converta moedas instantaneamente com taxas de câmbio atualizadas em tempo real.</p></header>
+<section>
+                <div class="converter-text">Quantia</div>
+                <div class="currency-input">
+                <input type="number" id="quantia">
+                <select name="moeda" id="moedaorigem">
+                <option value="USD">USD</option>
+                <option value="BRL">BRL</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+
+                <button id="botao-troca">⇅</button>
+
+                <div class="converter-text">Valor convertido</div>
+
+                <div class="currency-input">
+                <input type="number" id="quantia1">
+                <select name="moeda" id="moedadestino">
+                <option value="BRL">BRL</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+
+     </section>
+      </main>
+<script src="script.js"></script>
+</body>
+</html>
