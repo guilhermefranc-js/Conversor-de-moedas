@@ -26,3 +26,5 @@ O projeto foi construído utilizando as seguintes tecnologias:
 ---
 
 Desenvolvido como parte de um estudo em programação.
+
+<img width="1920" height="999" alt="image" src="https://github.com/user-attachments/assets/382d559a-896a-411b-9253-66367aafed41" />
