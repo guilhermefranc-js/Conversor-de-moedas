@@ -39,34 +39,35 @@ body {
 
 /* ======== CONTEÚDO PRINCIPAL ======== */
 main {
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 420px;
+    height: 400px;
+    width: 600px;
     padding: 20px;
 }
 
 header {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 h1 {
+    width: 600px;
+    margin-top: -200px;
     color: rgb(156, 212, 100);
     font-family: 'Anton', sans-serif;
-    font-size: clamp(50px, 12vw, 70px); /* Fonte responsiva */
+    font-size: 100px;
     line-height: 1.1;
     font-weight: 400; /* A fonte Anton já é "bold" por padrão */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 p {
-    font-size: 18px;
+    margin-left: 50px;
+    font-size: 23px;
     padding: 15px 0;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 /* ======== CAIXA DO CONVERSOR ======== */
